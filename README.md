@@ -11,9 +11,13 @@
 * Sensible setup for linting with solhint and uses code style formatting from Foundry – VSCode settings for automatic code styling and warnings included.
 * Includes some common libraries (such as OpenZeppelin, solmate and contracts from Safe) from the get go to make it easy to prototype.
 
+##### initialize your next solidity project with `forge`, using this repo as template
+
 ```bash
-# initialize your next solidity project with: forge init -t kalaspuff/solidity-template
 forge init -t kalaspuff/solidity-template your-new-project-name
+
+# Initializing ./your-new-project-name from https://github.com/kalaspuff/solidity-template...
+# Initialized forge project.
 ```
 
 ## Get started
