@@ -10,4 +10,28 @@ libs = ['lib']
 [fmt]
 line_length = 120
 
+[profile.local]
+eth_rpc_url = "http://localhost:8545"
+
+[profile.mainnet]
+eth_rpc_url = "https://rpc.ankr.com/eth"
+
+[profile.goerli]
+eth_rpc_url = "https://rpc.ankr.com/eth_goerli"
+
+[profile.sepolia]
+eth_rpc_url = "https://rpc.sepolia.org"
+
+[profile.optimism]
+eth_rpc_url = "https://rpc.ankr.com/optimism"
+
+[profile.optimism_testnet]
+eth_rpc_url = "https://rpc.ankr.com/optimism_testnet"
+
+[profile.polygon]
+eth_rpc_url = "https://rpc.ankr.com/polygon"
+
+[profile.polygon_mumbai]
+eth_rpc_url = "https://rpc.ankr.com/polygon_mumbai"
+
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config
