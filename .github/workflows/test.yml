@@ -1,0 +1,87 @@
+name: test
+
+on:
+  push:
+    branches: [main, master]
+  release:
+    types: [released]
+  pull_request:
+  workflow_dispatch:
+
+env:
+  FOUNDRY_PROFILE: ci
+
+jobs:
+  foundry:
+    strategy:
+      fail-fast: true
+
+    name: Foundry project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Run Forge build
+        run: |
+          forge --version
+          forge build --sizes
+        id: forge-build
+
+      - name: Run Forge tests
+        run: |
+          forge test -vvv
+        id: forge-test
+
+  lint-solhint:
+    strategy:
+      fail-fast: true
+
+    name: Contract linting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Setup Node 16
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16.x'
+          cache: 'npm'
+
+      - name: Install Node dependencies
+        run: |
+          npm ci
+
+      - name: Lint contracts
+        run: |
+          npx solhint 'contracts/**/*.sol'
+        id: solhint-lint
+
+  lint-forge-fmt:
+    strategy:
+      fail-fast: true
+
+    name: Code style
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+
+      - name: Install Foundry
+        uses: foundry-rs/foundry-toolchain@v1
+        with:
+          version: nightly
+
+      - name: Checks code style
+        run: |
+          forge fmt --check
+        id: forge-fmt
