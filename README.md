@@ -11,22 +11,21 @@
 * Sensible setup for linting with solhint and uses code style formatting from Foundry – VSCode settings for automatic code styling and warnings included.
 * Includes some common libraries (such as OpenZeppelin, solmate and contracts from Safe) from the get go to make it easy to prototype.
 
+<img width="654" alt="image" src="https://user-images.githubusercontent.com/89139/209405908-9ae22c4d-e516-402e-afbe-fc226f53045c.png">
+
+## Get started
+
 ##### initialize your next solidity project with `forge`, using this repo as template
 
 ```bash
 forge init -t kalaspuff/solidity-template your-new-project-name
-
 # Initializing ./your-new-project-name from https://github.com/kalaspuff/solidity-template...
 # Initialized forge project.
 ```
 
-## Get started
+##### install foundry
 
-### Foundry
-
-#### Install Foundry
-
-Follow the installation instructions at <https://book.getfoundry.sh/getting-started/installation.html>.
+In case you haven't installed the Solidity development toolset Foundry (`forge`, `cast` and `anvil`), tollow the installation instructions at <https://book.getfoundry.sh/getting-started/installation.html>.
 
 In short, here's the easiest option on macOS and Linux:
 
@@ -38,25 +37,37 @@ curl -L https://foundry.paradigm.xyz | bash
 foundryup
 ```
 
-#### Install dependencies
-
-```bash
-forge install
-```
-
 #### Build contracts
 
 ```bash
 forge build
+
+# alternatively with make
+make build
 ```
 
 #### Test
 
 ```bash
-forge test
+forge test -vvv
+
+# alternatively with make
+make test
 ```
 
-#### Deploy
+#### Linting
+
+Requires `solhint` which can be installed with `npm install`.
+
+```bash
+npx solhint contracts/**/*.sol
+forge fmt --check
+
+# alternatively with make
+make lint
+```
+
+### Deploy
 
 ##### `UpgradeableContract.sol`
 
@@ -78,6 +89,6 @@ FOUNDRY_PROFILE=goerli forge script script/deploy/DeploySimple.s.sol -vvvv
 FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeploySimple.s.sol -vvvv -l
 ```
 
-## Notes
+## Additional notes
 
-Whenever you install new libraries using Foundry, make sure to update your `remappings.txt` file by running `forge remappings > remappings.txt`.
+Whenever you install new libraries / dependencies using Foundry (using `foundry install`), make sure to update your `remappings.txt` file by running `forge remappings > remappings.txt`.
