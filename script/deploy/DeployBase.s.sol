@@ -7,7 +7,8 @@ import {console2 as console} from "forge-std/console2.sol";
 
 // Default address for msg.sender: 0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38
 address constant DEFAULT_SENDER = address(uint160(uint256(keccak256("foundry default caller"))));
-address constant FALLBACK_SENDER = 0x00000000C0DE4711C0dE4711C0de471100000000;
+address constant FALLBACK_TEST_SENDER = 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266;
+uint256 constant FALLBACK_TEST_PRIVATE_KEY = 0xac0974bec39a17e36ba4a6b4d238ff944bacb478cbed5efcae784d7bf4f2ff80;
 
 abstract contract DeployBase is Script {
     address public sender;
@@ -34,7 +35,8 @@ abstract contract DeployBase is Script {
             privateKey = 0;
             console.log("Overriding DEPLOYER_SENDER with msg.sender | msg.sender:", sender);
         } else if (msg.sender == DEFAULT_SENDER && sender == address(0) && privateKey == 0) {
-            sender = FALLBACK_SENDER;
+            sender = FALLBACK_TEST_SENDER;
+            privateKey = FALLBACK_TEST_PRIVATE_KEY;
             console.log("Overriding DEPLOYER_SENDER with default sender | msg.sender:", sender);
         }
 
@@ -44,11 +46,13 @@ abstract contract DeployBase is Script {
                 console.log("Using sender derived from private key | msg.sender:", sender);
             } else if (vm.addr(privateKey) != sender) {
                 revert("Invalid sender for private key");
-            } else {
+            } else if (sender != FALLBACK_TEST_SENDER) {
                 console.log("Using sender for matching private key | msg.sender:", sender);
             }
+            vm.startBroadcast(privateKey);
         } else {
             console.log("Using sender without access to private key | msg.sender:", sender);
+            vm.startBroadcast(sender);
         }
     }
 }

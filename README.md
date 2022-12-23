@@ -73,20 +73,20 @@ make lint
 
 ```bash
 # specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli forge script script/deploy/DeployUpgradeable.s.sol -vvvv
+FOUNDRY_PROFILE=goerli forge script script/deploy/DeployUpgradeable.s.sol -vvvv --broadcast
 
 # deployment with ledger wallet
-FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeployUpgradeable.s.sol -vvvv -l
+FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeployUpgradeable.s.sol -vvvv --broadcast -l
 ```
 
 ##### `SimpleContract.sol`
 
 ```bash
 # specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli forge script script/deploy/DeploySimple.s.sol -vvvv
+FOUNDRY_PROFILE=goerli forge script script/deploy/DeploySimple.s.sol -vvvv --broadcast
 
 # deployment with ledger wallet
-FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeploySimple.s.sol -vvvv -l
+FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeploySimple.s.sol -vvvv --broadcast -l
 ```
 
 ## Additional notes
