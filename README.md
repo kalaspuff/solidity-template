@@ -69,24 +69,86 @@ make lint
 
 ### Deploy
 
-##### `UpgradeableContract.sol`
+#### `SimpleContract.sol`
+
+##### Deployment using a script (including verification)
 
 ```bash
 # specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli forge script script/deploy/DeployUpgradeable.s.sol -vvvv --broadcast
+FOUNDRY_PROFILE=goerli \
+forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast
 
 # deployment with ledger wallet
-FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeployUpgradeable.s.sol -vvvv --broadcast -l
+FOUNDRY_PROFILE=goerli \
+FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast -l
 ```
 
-##### `SimpleContract.sol`
+##### Alternative way of deploying using `forge create`
+
+```bash
+# deploying using forge create
+FOUNDRY_PROFILE=goerli \
+forge create --verify --private-key "PRIVATE KEY" \
+    contracts/SimpleContract.sol:SimpleContract
+
+# deployment with ledger wallet
+FOUNDRY_PROFILE=goerli \
+FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+forge create --verify -l \
+    contracts/SimpleContract.sol:SimpleContract
+```
+
+##### Manually verifying a contract if needed
+
+```bash
+# verify contract
+forge verify-contract \
+    --chain goerli \
+    --watch \
+    "<CONTRACT ADDRESS>" \
+    --constructor-args $(cast abi-encode "constructor()") \
+    contracts/SimpleContract.sol:SimpleContract
+```
+
+#### `UpgradeableContract.sol`
+
+##### Deployment using a script (including verification)
 
 ```bash
 # specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli forge script script/deploy/DeploySimple.s.sol -vvvv --broadcast
+FOUNDRY_PROFILE=goerli \
+forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast
 
 # deployment with ledger wallet
-FOUNDRY_PROFILE=goerli FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 forge script script/deploy/DeploySimple.s.sol -vvvv --broadcast -l
+FOUNDRY_PROFILE=goerli \
+FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast -l
+```
+
+##### Manually verifying the contracts if needed
+
+```bash
+# verify implementation contract
+forge verify-contract \
+    --chain goerli \
+    --watch \
+    "<PROXY ADDRESS>" \
+    --constructor-args $(cast abi-encode "constructor()") \
+    contracts/UpgradeableContract.sol:UpgradeableContract
+
+# verify proxy contract
+forge verify-contract \
+    --chain goerli \
+    --watch \
+    "<PROXY ADDRESS>" \
+    --constructor-args \
+        $(cast abi-encode \
+            "constructor(address,bytes)" \
+            "<IMPLEMENTATION ADDRESS>" \
+            $(cast abi-encode "initialize(address)" "<DEPLOYER ADDRESS>") \
+        ) \
+    contracts/ERC1967Proxy.sol:ERC1967Proxy
 ```
 
 ## Additional notes
