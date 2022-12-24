@@ -133,7 +133,7 @@ forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast -l
 forge verify-contract \
     --chain goerli \
     --watch \
-    "<PROXY ADDRESS>" \
+    "<IMPLEMENTATION ADDRESS>" \
     --constructor-args $(cast abi-encode "constructor()") \
     contracts/UpgradeableContract.sol:UpgradeableContract
 
