@@ -10,6 +10,7 @@ contract DeploySimple is DeployBase {
     address public deploymentAddress;
 
     function run() external {
+        startBroadcast();
         deploymentAddress = address(new SimpleContract());
         vm.stopBroadcast();
 

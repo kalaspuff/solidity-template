@@ -12,6 +12,15 @@ uint256 constant FALLBACK_TEST_PRIVATE_KEY = 0xac0974bec39a17e36ba4a6b4d238ff944
 
 abstract contract DeployBase is Script {
     address public sender;
+    uint256 private privateKey;
+
+    function startBroadcast() internal {
+        if (privateKey != 0) {
+            vm.startBroadcast(privateKey);
+        } else {
+            vm.startBroadcast(sender);
+        }
+    }
 
     function getChainId() public view returns (uint256) {
         return block.chainid > 0 ? block.chainid : 31337;
@@ -20,7 +29,7 @@ abstract contract DeployBase is Script {
     function setUp() public {
         console.log("Chain ID | block.chainid:", getChainId());
 
-        uint256 privateKey = vm.envOr("DEPLOYER_PRIVATE_KEY", uint256(0));
+        privateKey = vm.envOr("DEPLOYER_PRIVATE_KEY", uint256(0));
         try vm.envOr("DEPLOYER_SENDER", address(0)) returns (address _sender) {
             sender = _sender;
         } catch {
@@ -49,10 +58,8 @@ abstract contract DeployBase is Script {
             } else if (sender != FALLBACK_TEST_SENDER) {
                 console.log("Using sender for matching private key | msg.sender:", sender);
             }
-            vm.startBroadcast(privateKey);
         } else {
             console.log("Using sender without access to private key | msg.sender:", sender);
-            vm.startBroadcast(sender);
         }
     }
 }

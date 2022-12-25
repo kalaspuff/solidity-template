@@ -1,12 +1,14 @@
 [profile.default]
 solc = "0.8.17"
 optimizer = true
-optimizer_runs = 200
+optimizer_runs = 100
+via_ir = true
 
-src = 'contracts'
-out = 'out'
-libs = ['lib']
+src = "contracts"
+out = "out"
+libs = ["lib"]
 build_info = true
+sparse_mode = true
 
 [fmt]
 line_length = 120
@@ -19,6 +21,15 @@ optimism = "${OPTIMISM_RPC_URL}"
 optimism_goerli = "${OPTIMISM_GOERLI_RPC_URL}"
 polygon = "${POLYGON_RPC_URL}"
 polygon_mumbai = "${POLYGON_MUMBAI_RPC_URL}"
+
+[etherscan]
+mainnet = { key = "${MAINNET_ETHERSCAN_API_KEY}" }
+goerli = { key = "${GOERLI_ETHERSCAN_API_KEY}" }
+sepolia = { key = "${SEPOLIA_ETHERSCAN_API_KEY}" }
+optimism = { key = "${OPTIMISM_ETHERSCAN_API_KEY}" }
+optimism_goerli = { key = "${OPTIMISM_GOERLI_ETHERSCAN_API_KEY}" }
+polygon = { key = "${POLYGON_ETHERSCAN_API_KEY}" }
+polygon_mumbai = { key = "${POLYGON_MUMBAI_ETHERSCAN_API_KEY}" }
 
 [profile.local]
 eth_rpc_url = "http://localhost:8545"

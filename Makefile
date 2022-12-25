@@ -32,7 +32,9 @@ default:
 	@echo "- make build        | build contracts"
 	@echo "- make test         | run unit tests"
 	@echo "- make lint         | lint code"
-	@echo "- make fmt          | apply code style formatting"
+	@echo "- make install      | install dependencies"
+	@echo "- make format       | apply code style formatting"
+	@echo "- make clean        | remove build artifacts"
 
 .PHONY: forge-build
 forge-build:
@@ -40,7 +42,7 @@ forge-build:
 
 .PHONY: forge-test
 forge-test:
-	@runcmd forge test -vvv
+	@runcmd forge test -vvvv
 
 .PHONY: forge-lint
 forge-lint:
@@ -54,6 +56,14 @@ solhint-lint:
 forge-fmt:
 	@runcmd forge fmt
 
+.PHONY: forge-clean
+forge-clean:
+	@runcmd forge clean
+
+.PHONY: npm-install
+npm-install:
+	@runcmd npm install
+
 build: forge-build
 contract: build
 contracts: build
@@ -65,6 +75,10 @@ lint: solhint-lint forge-lint
 linting: lint
 linter: lint
 
-fmt: forge-fmt
-format: fmt
-formatting: fmt
+format: forge-fmt
+fmt: format
+formatting: format
+
+clean: forge-clean
+
+install: npm-install
