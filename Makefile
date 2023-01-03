@@ -8,9 +8,13 @@ define shell-functions
 : BEGIN
 runcmd() {
 	_cmd=$@;
+
+	script_cmd="script -q /dev/null ${_cmd[@]} >&1";
+	script -q /dev/null -c echo 2> /dev/null > /dev/null && script_cmd="script -q /dev/null -c \"${_cmd[@]}\" >&1";
+
 	printf "\e[90;1m[\e[032;1mmake \e[90;1m➔ \e[033;1mcmd\e[90;1m]\e[0m ≡ \e[90m$_cmd\e[0m\n" \
 		&& ( \
-			cmd_output=$(script -q /dev/null $_cmd >&1 | tee /dev/tty; exit ${PIPESTATUS[0]}); cmd_exit_code=$?; \
+			cmd_output=$(eval "$script_cmd" | tee /dev/tty; exit ${PIPESTATUS[0]}); cmd_exit_code=$?; \
 			[ -z "$cmd_output" ] || ([ -z "$(tr -d '[:space:]' <<< $cmd_output)" ] && printf "\e[1A"); \
 			[[ "$cmd_exit_code" -eq 0 ]] || return $cmd_exit_code \
 		) \
@@ -50,7 +54,7 @@ forge-lint:
 
 .PHONY: solhint-lint
 solhint-lint:
-	@runcmd npx solhint 'contracts/**/*.sol'
+	@runcmd npx solhint \'contracts/**/*.sol\'
 
 .PHONY: forge-fmt
 forge-fmt:
