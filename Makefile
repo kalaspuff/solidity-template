@@ -70,6 +70,10 @@ foundryup-install:
 npm-install:
 	@runcmd npm install
 
+.PHONY: git-submodule-update
+git-submodule-update:
+	@runcmd git submodule update --init --recursive
+
 build: forge-build
 contract: build
 contracts: build
@@ -87,4 +91,4 @@ formatting: format
 
 clean: forge-clean
 
-install: foundryup-install npm-install
+install: git-submodule-update npm-install

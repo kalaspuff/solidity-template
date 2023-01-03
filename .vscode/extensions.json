@@ -5,7 +5,8 @@
         "GitHub.copilot",
         "eamodio.gitlens",
         "DavidAnson.vscode-markdownlint",
-        "VisualStudioExptTeam.vscodeintellicode"
+        "VisualStudioExptTeam.vscodeintellicode",
+        "ms-vscode-remote.remote-containers"
     ],
     "unwantedRecommendations": []
 }

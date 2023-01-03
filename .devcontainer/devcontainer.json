@@ -25,7 +25,8 @@
                 "GitHub.copilot",
                 "eamodio.gitlens",
                 "DavidAnson.vscode-markdownlint",
-                "VisualStudioExptTeam.vscodeintellicode"
+                "VisualStudioExptTeam.vscodeintellicode",
+                "ms-vscode-remote.remote-containers"
             ]
         }
     },
@@ -35,5 +36,6 @@
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.confirmOnKill": "never"
-    }
+    },
+    "postCreateCommand": "git submodule update --init"
 }
