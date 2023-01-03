@@ -1,0 +1,40 @@
+{
+    "name": "solidity-template",
+    "image": "mcr.microsoft.com/devcontainers/base:jammy",
+    "features": {
+        "ghcr.io/devcontainers/features/github-cli:1": {},
+        "ghcr.io/devcontainers/features/node:1": {},
+        "ghcr.io/devcontainers-contrib/features/bash-command:1": {
+            "command": "curl -L https://foundry.paradigm.xyz | sudo -u ${_REMOTE_USER} bash && sudo -u ${_REMOTE_USER} ${_REMOTE_USER_HOME}/.foundry/bin/foundryup"
+        },
+        "ghcr.io/devcontainers-contrib/features/npm-package:1": {
+            "package": "solhint"
+        },
+        "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
+        "ghcr.io/guiyomh/features/vim:0": {},
+        "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {},
+        "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+            "packages": "make"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "JuanBlanco.solidity",
+                "bierner.markdown-preview-github-styles"
+            ]
+        }
+    },
+    "remoteEnv": {
+        "PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.foundry/bin"
+    },
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash": {
+                "path": "/usr/bin/bash"
+            }
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.confirmOnKill": "never"
+    }
+}

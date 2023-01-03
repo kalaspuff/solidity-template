@@ -6,6 +6,13 @@
     "search.exclude": {
         "lib/forge-std": true
     },
+    "files.exclude": {
+        "broadcast": true,
+        "cache": true,
+        "node_modules": true,
+        "out": true,
+        ".make.functions.sh": true
+    },
     "files.associations": {
         ".gas-snapshot": "julia"
     },
@@ -13,5 +20,8 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "terminal.integrated.confirmOnKill": "never",
+    "debug.terminal.clearBeforeReusing": true,
+    "explorer.excludeGitIgnore": false
 }
