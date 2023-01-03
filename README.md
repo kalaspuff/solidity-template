@@ -176,52 +176,52 @@ A few examples of how the provided example contracts could be deployed and verif
 
 Deployment by running a Solidity script + verification of all deployed contracts during broadcast.
 
-* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+* [`➔ contracts/SimpleContract.sol`](contracts/SimpleContract.sol)
 
   * Deployment using the `DEPLOYER_PRIVATE_KEY` which you can specify in your `.env`.
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_PROFILE="goerli" \
     forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast
     ```
 
   * Deployment with a Ledger wallet (use your address as env value to `FOUNDRY_SENDER`).
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
-    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    FOUNDRY_PROFILE="goerli" \
+    FOUNDRY_SENDER="0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9" \
     forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast -l
     ```
 
-* **[`➔ UpgradeableContract.sol`](contracts/UpgradeableContract.sol)**<br/>**[`➔ ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)**
+* [`➔ contracts/UpgradeableContract.sol`](contracts/UpgradeableContract.sol)<br/>[`➔ contracts/proxy/ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)
 
   * Deployment using the `DEPLOYER_PRIVATE_KEY` which you can specify in your `.env`.
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_PROFILE="goerli" \
     forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast
     ```
 
   * Deployment with a Ledger wallet (use your address as env value to `FOUNDRY_SENDER`).
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
-    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    FOUNDRY_PROFILE="goerli" \
+    FOUNDRY_SENDER="0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9" \
     forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast -l
     ```
 
-### 🦄 ⌁ Alternative deployment for simple contracts
+### 🦄 ⌁ Alternative deployment for simpler contracts
 
-Alternative means of deployment using `forge create`.
+This method instead deploys the contract using `forge create`.
 
 This method is most likely only suitable for simpler contracts or contracts that doesn't require any dynamic arguments for their constructor.
 
-* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+* [`➔ contracts/SimpleContract.sol`](contracts/SimpleContract.sol)
 
   * Deploying using `forge create` (specify the private key for the address to deploy from).
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_PROFILE="goerli" \
     forge create --verify --private-key "PRIVATE KEY HERE" \
         contracts/SimpleContract.sol:SimpleContract
     ```
@@ -229,8 +229,8 @@ This method is most likely only suitable for simpler contracts or contracts that
   * Deploying using `forge create` with a Ledger (`FOUNDRY_SENDER` value should be your address).
 
     ```bash
-    FOUNDRY_PROFILE=goerli \
-    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    FOUNDRY_PROFILE="goerli" \
+    FOUNDRY_SENDER="0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9" \
     forge create --verify -l \
         contracts/SimpleContract.sol:SimpleContract
     ```
@@ -241,20 +241,20 @@ Usually the contract should be verified during deployment if a correct API key f
 
 This is only needed to manually verify contracts that weren't verified during their deployment.
 
-* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+* [`➔ contracts/SimpleContract.sol`](contracts/SimpleContract.sol)
 
   * Verify contract (specify the actual contract address instead of `"CONTRACT ADDRESS"`).
 
     ```bash
     forge verify-contract \
-        --chain goerli \
+        --chain "goerli" \
         --watch \
         "CONTRACT ADDRESS" \
         --constructor-args $(cast abi-encode "constructor()") \
         contracts/SimpleContract.sol:SimpleContract
     ```
 
-* **[`➔ UpgradeableContract.sol`](contracts/UpgradeableContract.sol)**<br/>**[`➔ ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)**
+* [`➔ contracts/UpgradeableContract.sol`](contracts/UpgradeableContract.sol)<br/>[`➔ contracts/proxy/ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)
 
   The upgradeable contract has an implementation contract as well as a proxy contract that needs verification. Replace the values for `"IMPLEMENTATION ADDRESS"`, `"PROXY ADDRESS"` and `"DEPLOYER ADDRESS"` in the examples below.
 
@@ -262,7 +262,7 @@ This is only needed to manually verify contracts that weren't verified during th
 
     ```bash
     forge verify-contract \
-        --chain goerli \
+        --chain "goerli" \
         --watch \
         "IMPLEMENTATION ADDRESS" \
         --constructor-args $(cast abi-encode "constructor()") \
@@ -271,7 +271,7 @@ This is only needed to manually verify contracts that weren't verified during th
 
     ```bash
     forge verify-contract \
-        --chain goerli \
+        --chain "goerli" \
         --watch \
         "PROXY ADDRESS" \
         --constructor-args \
@@ -302,7 +302,7 @@ We're all learning. Feedback and contributions most welcome!
 twitter ◼️ https://twitter.com/carloscaraaro
 coa.eth ◼️ 0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9
 discord ◼️ carloscar#0001
-devnull ◼️ hello@carloscar.com
+void    ◼️ hello@carloscar.com
 ```
 
 <sup>**If we're not already friends on the internet, the risk is high that I'll miss your message.**</sub>

@@ -4,7 +4,7 @@
     "solidity.compileUsingRemoteVersion": "v0.8.17",
     "solidity.formatter": "forge",
     "search.exclude": {
-        "lib": true
+        "lib/forge-std": true
     },
     "files.associations": {
         ".gas-snapshot": "julia"
@@ -13,4 +13,5 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
+    "files.eol": "\n"
 }
