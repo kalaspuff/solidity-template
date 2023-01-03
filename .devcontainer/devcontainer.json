@@ -21,7 +21,11 @@
         "vscode": {
             "extensions": [
                 "JuanBlanco.solidity",
-                "bierner.markdown-preview-github-styles"
+                "bierner.markdown-preview-github-styles",
+                "GitHub.copilot",
+                "eamodio.gitlens",
+                "DavidAnson.vscode-markdownlint",
+                "VisualStudioExptTeam.vscodeintellicode"
             ]
         }
     },
@@ -29,11 +33,6 @@
         "PATH": "${containerEnv:PATH}:${containerEnv:HOME}/.foundry/bin"
     },
     "settings": {
-        "terminal.integrated.profiles.linux": {
-            "bash": {
-                "path": "/usr/bin/bash"
-            }
-        },
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.confirmOnKill": "never"
     }

@@ -1,7 +1,11 @@
 {
     "recommendations": [
         "JuanBlanco.solidity",
-        "bierner.markdown-preview-github-styles"
+        "bierner.markdown-preview-github-styles",
+        "GitHub.copilot",
+        "eamodio.gitlens",
+        "DavidAnson.vscode-markdownlint",
+        "VisualStudioExptTeam.vscodeintellicode"
     ],
     "unwantedRecommendations": []
 }
