@@ -67,13 +67,13 @@ A couple of `make` commands are available for convenience and quality of life.
 
 ```console
 user@cpu:~/code/my-contract $ make
-Usage:
-- make build        | build contracts
-- make test         | run unit tests
-- make lint         | lint code
-- make install      | install dependencies
-- make format       | apply code style formatting
-- make clean        | remove build artifacts
+usage:
+  $ make build         ➔ build contracts
+  $ make test          ➔ run unit tests
+  $ make lint          ➔ lint code
+  $ make install       ➔ install dependencies
+  $ make format        ➔ apply code style formatting
+  $ make clean         ➔ remove build artifacts
 ```
 
 #### Explore Foundry if you haven't already. 💻

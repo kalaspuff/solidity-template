@@ -32,13 +32,13 @@ $(shell sed -n '/^: BEGIN/,/^: END/p' $(THIS_FILE) > .make.functions.sh)
 SHELL := /bin/bash --init-file .make.functions.sh -i
 
 default:
-	@echo "Usage:"
-	@echo "- make build        | build contracts"
-	@echo "- make test         | run unit tests"
-	@echo "- make lint         | lint code"
-	@echo "- make install      | install dependencies"
-	@echo "- make format       | apply code style formatting"
-	@echo "- make clean        | remove build artifacts"
+	printf "\e[90musage:\e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1mbuild         \e[0;90m➔ \e[32;3mbuild contracts \e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1mtest          \e[0;90m➔ \e[32;3mrun unit tests \e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1mlint          \e[0;90m➔ \e[32;3mlint code \e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1minstall       \e[0;90m➔ \e[32;3minstall dependencies \e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1mformat        \e[0;90m➔ \e[32;3mapply code style formatting \e[0m\n"
+	printf "  \e[90m$$\e[0m \e[97;1mmake\e[0m \e[92;1mclean         \e[0;90m➔ \e[32;3mremove build artifacts \e[0m\n"
 
 .PHONY: forge-build
 forge-build:
