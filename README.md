@@ -1,156 +1,308 @@
-# Boilerplate for Solidity development with Foundry
+# `≡ solidity-template`
 
-![Github Actions](https://github.com/kalaspuff/solidity-template/workflows/test/badge.svg)
+*This is a boilerplate repo providing a base setup to get started experimenting with smart contracts built in Solidity. This template should preferably be used with the [Foundry toolkit](https://github.com/foundry-rs/foundry). The setup is mostly tested on macOS.*
 
-*Template repo with a good base setup to get started when experimenting with smart contracts built in Solidity.* 💰
+### Smart Contract Development in Solidity for Ethereum
 
-### Follows good practice to make it easy to get started
+* ✨ Developer experience improvements using good defaults and with the goal to follow best practices.
+* 🪢 Comes with both a simple example contract and a more complex upgradeable contract + ERC1967 proxy.
+* 🚀 Includes deployment scripts to easily deploy to different networks, as well as some basic unit tests.
+* 🪄 Sensible setup for linting, code formatting — includes VSCode settings for auto code style, etc.
+* 📚 Includes some common libraries (such as OpenZeppelin, solmate and contracts from Safe).
+* 🎉 Aims to make it easy for devs to prototype and code contracts without the effort of the initial chores.
 
-* Comes with both a simple contract and a basic contract with upgradeable functionality.
-* Includes deployment scripts to easily deploy to different networks, as well as some basic unit tests.
-* Sensible setup for linting with solhint and uses code style formatting from Foundry – VSCode settings for automatic code styling and warnings included.
-* Includes some common libraries (such as OpenZeppelin, solmate and contracts from Safe) from the get go to make it easy to prototype.
+### Contributions
 
-<img width="654" alt="image" src="https://user-images.githubusercontent.com/89139/209405908-9ae22c4d-e516-402e-afbe-fc226f53045c.png">
+If you find any bugs 🐛 in the contracts, in this documentation or if you have ideas 💡 of ways to make this more useful and dev friendly – please open an issue or PR on GitHub [`➔ kalaspuff/solidity-template`](https://github.com/kalaspuff/solidity-template). 🙏
 
 ## Get started
 
-##### initialize your next solidity project with `forge`, using this repo as template
+These instructions expect you to be running a Linux or macOS system with Foundry and build essentials already installed. This *might* also work on another setup (such as WSL or other shells) where you can use environment values + use the Foundry CLI (eventually USB permissions also required in case you need to access a USB connected cold wallet).
 
-```bash
-forge init -t kalaspuff/solidity-template your-new-project-name
-# Initializing ./your-new-project-name from https://github.com/kalaspuff/solidity-template...
-# Initialized forge project.
+### 🏃 ⌁ Initialize and install dependencies
+
+Initialize a project with `forge init -t kalaspuff/solidity-template` to use this repo as template.
+
+```console
+user@cpu:~/code $ forge init -t kalaspuff/solidity-template my-contract
+Initializing ./my-contract from https://github.com/kalaspuff/solidity-template...
+Initialized forge project.
 ```
 
-##### install foundry
+The new project will be initialized at the given name (in the above example `my-contract`).
 
-In case you haven't installed the Solidity development toolset Foundry (`forge`, `cast` and `anvil`), tollow the installation instructions at <https://book.getfoundry.sh/getting-started/installation.html>.
-
-In short, here's the easiest option on macOS and Linux:
-
-```bash
-# installs the foundryup shell script
-curl -L https://foundry.paradigm.xyz | bash
-
-# then use foundryup to install `forge`, `cast` and `anvil`
-foundryup
+```console
+user@cpu:~/code $ cd my-contract
+user@cpu:~/code/my-contract $
 ```
 
-#### Build contracts
+Populate the `.env` with the `.env.example` data (which includes some free RPC nodes from Ankr).
 
-```bash
-forge build
-
-# alternatively with make
-make build
+```console
+user@cpu:~/code/my-contract $ cp .env.example .env
 ```
 
-#### Test
+The linter `solhint` is installed via `npm`
 
-```bash
-forge test -vvv
-
-# alternatively with make
-make test
+```console
+user@cpu:~/code/my-contract $ npm install
 ```
 
-#### Linting
+### 🔗 ⌁ Update the remote origin
 
-Requires `solhint` which can be installed with `npm install`.
+After you've initialized your project with `forge init` you need to change remote repository to be able to push commits towards your own repo.
 
-```bash
-npx solhint contracts/**/*.sol
-forge fmt --check
+##### Change the remote url to for example `coder/my-contract` (on GitHub)
 
-# alternatively with make
-make lint
+```console
+user@cpu:~/code/my-contract $ git remote set-url origin https://github.com/coder/my-contract.git
+user@cpu:~/code/my-contract $ git remote -v
+origin https://github.com/coder/my-contract (fetch)
+origin https://github.com/coder/my-contract (push)
 ```
 
-### Deploy
+## Development
 
-#### `SimpleContract.sol`
+A couple of `make` commands are available for convenience and quality of life.
 
-##### Deployment using a script (including verification)
-
-```bash
-# specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli \
-forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast
-
-# deployment with ledger wallet
-FOUNDRY_PROFILE=goerli \
-FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
-forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast -l
+```console
+user@cpu:~/code/my-contract $ make
+Usage:
+- make build        | build contracts
+- make test         | run unit tests
+- make lint         | lint code
+- make install      | install dependencies
+- make format       | apply code style formatting
+- make clean        | remove build artifacts
 ```
 
-##### Alternative way of deploying using `forge create`
+#### Explore Foundry if you haven't already. 💻
 
-```bash
-# deploying using forge create
-FOUNDRY_PROFILE=goerli \
-forge create --verify --private-key "PRIVATE KEY" \
-    contracts/SimpleContract.sol:SimpleContract
+* Highly recommended to become used to the CLI tools from Foundry – specially `forge` and `cast`.
+* Start with checking out the help output from `forge --help` and `cast --help`.
+* There's also additional information to read up on at <https://book.getfoundry.sh/>.
 
-# deployment with ledger wallet
-FOUNDRY_PROFILE=goerli \
-FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
-forge create --verify -l \
-    contracts/SimpleContract.sol:SimpleContract
+### 🚧 ⌁ Build contracts
+
+Build the contracts using `make build` or `forge build`.
+
+```console
+user@cpu:~/code/my-contract $ make build
+[make ➔ cmd] ≡ forge build
+[⠊] Compiling...
+[⠘] Solc 0.8.17 finished
+Compiler run successful
 ```
 
-##### Manually verifying a contract if needed
+### 👌 ⌁ Linting and code styling
 
-```bash
-# verify contract
-forge verify-contract \
-    --chain goerli \
-    --watch \
-    "<CONTRACT ADDRESS>" \
-    --constructor-args $(cast abi-encode "constructor()") \
-    contracts/SimpleContract.sol:SimpleContract
+If you're a VSCode user with the Solidity extension installed you'll get all the linting and automated code formatting you need from within VSCode.
+
+For all other linting needs – run lint checks with `make lint` or manually with `solhint` and `forge fmt --check`.
+
+```console
+user@cpu:~/code/my-contract $ make lint
+[make ➔ cmd] ≡ npx solhint contracts/**/*.sol
+[make ➔ cmd] ≡ forge fmt --check
 ```
 
-#### `UpgradeableContract.sol`
+### 🧪 ⌁ Test cases implemented in Solidity
 
-##### Deployment using a script (including verification)
+Run the Solidity tests that lives in the [`./test`](test/) folder with `make test` or `forge test`.
 
-```bash
-# specify private key in .env as DEPLOYER_PRIVATE_KEY
-FOUNDRY_PROFILE=goerli \
-forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast
-
-# deployment with ledger wallet
-FOUNDRY_PROFILE=goerli \
-FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
-forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast -l
+```console
+user@cpu:~/code/my-contract $ make test
+[make ➔ cmd] ≡ forge test
+Running 2 tests for test/SimpleContract.t.sol:SimpleContractTest            ✔︎✔︎
+Running 5 tests for test/UpgradeableContract.t.sol:UpgradeableContractTest  ✔︎✔︎✔︎✔︎✔︎
 ```
 
-##### Manually verifying the contracts if needed
+## Installation of Foundry
 
-```bash
-# verify implementation contract
-forge verify-contract \
-    --chain goerli \
-    --watch \
-    "<IMPLEMENTATION ADDRESS>" \
-    --constructor-args $(cast abi-encode "constructor()") \
-    contracts/UpgradeableContract.sol:UpgradeableContract
+In case you haven't installed the Solidity development toolset **Foundry** (`forge`, `cast` and `anvil`), follow the installation instructions at <https://book.getfoundry.sh/getting-started/installation.html>.
 
-# verify proxy contract
-forge verify-contract \
-    --chain goerli \
-    --watch \
-    "<PROXY ADDRESS>" \
-    --constructor-args \
-        $(cast abi-encode \
-            "constructor(address,bytes)" \
-            "<IMPLEMENTATION ADDRESS>" \
-            $(cast abi-encode "initialize(address)" "<DEPLOYER ADDRESS>") \
-        ) \
-    contracts/ERC1967Proxy.sol:ERC1967Proxy
+In short, here's the easiest option on Linux and macOS.
+
+##### Install the `foundryup` shell script, followed by installation of `forge`, `cast` and `anvil`
+
+```console
+user@cpu:~ $ curl -L https://foundry.paradigm.xyz | bash
+Installing foundryup...
 ```
 
-## Additional notes
+When installing `foundryup`, the PATH to where Foundry is located is added to your shell's profile file. Follow the instructions that's shown of how to reinitialize your shell (usually `source ~/.zshrc` or `source ~/.bashrc`).
 
-Whenever you install new libraries / dependencies using Foundry (using `foundry install`), make sure to update your `remappings.txt` file by running `forge remappings > remappings.txt`.
+##### Use `foundryup` to complete the installion of `forge`, `cast` and `anvil`
+
+```console
+user@cpu:~ $ foundryup
+foundryup: installing foundry (version nightly, tag nightly)
+foundryup: done
+```
+
+## The `.env` file and environment values
+
+Set up your credentials required for deployments (for testnets + mainnet or other EVM chains), together with API keys for etherscan, etc. to automate the verification part during deployments. The `.env` file is ofc. ignored using `.gitignore` so that it isn't accidentally committed to a Git repo.
+
+### 🔒 ⌁ Example of `.env` configuration values
+
+The default `.env.example` file comes with a few examples of of values, but you usually will only need to specify a few of them - here's an example for set up where we want to test on Goerli and later deploy to Ethereum mainnet:
+
+```env
+# the private key of the eoa address you want to initiate deploy scripts from
+DEPLOYER_PRIVATE_KEY="0x0000000000000000000000000000000000000000000000000000000000000000"
+
+# for goerli and mainnet we'll often use the same etherscan api key
+MAINNET_ETHERSCAN_API_KEY="000000000000ETHERSCANAPIKEYEXAMPLE"
+GOERLI_ETHERSCAN_API_KEY="000000000000ETHERSCANAPIKEYEXAMPLE"
+
+# any rpc url of your choice or for example rpc urls provided from alchemy, ankr, etc.
+MAINNET_RPC_URL="https://rpc.ankr.com/eth"
+GOERLI_RPC_URL="https://rpc.ankr.com/eth_goerli"
+```
+
+## Deployment
+
+<sub>DISCLAIMER</sub>
+
+* 🧑‍🔬 Code in this repo may be experimental.
+* 🐛 Code may not function in your intended way.
+* 🚨 Know what you're doing.
+* 💸 Use at your own risk.
+
+A few examples of how the provided example contracts could be deployed and verified on Etherscan. Please understand the disclaimer above so you don't accidentally end up losing your precious ETH.
+
+### 🚀 ⌁ Deployment script for flexible or complex deployments
+
+Deployment by running a Solidity script + verification of all deployed contracts during broadcast.
+
+* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+
+  * Deployment using the `DEPLOYER_PRIVATE_KEY` which you can specify in your `.env`.
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast
+    ```
+
+  * Deployment with a Ledger wallet (use your address as env value to `FOUNDRY_SENDER`).
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    forge script script/deploy/DeploySimple.s.sol -vvvv --verify --broadcast -l
+    ```
+
+* **[`➔ UpgradeableContract.sol`](contracts/UpgradeableContract.sol)**<br/>**[`➔ ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)**
+
+  * Deployment using the `DEPLOYER_PRIVATE_KEY` which you can specify in your `.env`.
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast
+    ```
+
+  * Deployment with a Ledger wallet (use your address as env value to `FOUNDRY_SENDER`).
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    forge script script/deploy/DeployUpgradeable.s.sol -vvvv --verify --broadcast -l
+    ```
+
+### 🦄 ⌁ Alternative deployment for simple contracts
+
+Alternative means of deployment using `forge create`.
+
+This method is most likely only suitable for simpler contracts or contracts that doesn't require any dynamic arguments for their constructor.
+
+* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+
+  * Deploying using `forge create` (specify the private key for the address to deploy from).
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    forge create --verify --private-key "PRIVATE KEY HERE" \
+        contracts/SimpleContract.sol:SimpleContract
+    ```
+
+  * Deploying using `forge create` with a Ledger (`FOUNDRY_SENDER` value should be your address).
+
+    ```bash
+    FOUNDRY_PROFILE=goerli \
+    FOUNDRY_SENDER=0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9 \
+    forge create --verify -l \
+        contracts/SimpleContract.sol:SimpleContract
+    ```
+
+### 📒 ⌁ Etherscan verification for previously unverified contracts
+
+Usually the contract should be verified during deployment if a correct API key for Etherscan is given and if the deployment was done together with the `--verify` option.
+
+This is only needed to manually verify contracts that weren't verified during their deployment.
+
+* **[`➔ SimpleContract.sol`](contracts/SimpleContract.sol)**
+
+  * Verify contract (specify the actual contract address instead of `"CONTRACT ADDRESS"`).
+
+    ```bash
+    forge verify-contract \
+        --chain goerli \
+        --watch \
+        "CONTRACT ADDRESS" \
+        --constructor-args $(cast abi-encode "constructor()") \
+        contracts/SimpleContract.sol:SimpleContract
+    ```
+
+* **[`➔ UpgradeableContract.sol`](contracts/UpgradeableContract.sol)**<br/>**[`➔ ERC1967Proxy.sol`](contracts/proxy/ERC1967Proxy.sol)**
+
+  The upgradeable contract has an implementation contract as well as a proxy contract that needs verification. Replace the values for `"IMPLEMENTATION ADDRESS"`, `"PROXY ADDRESS"` and `"DEPLOYER ADDRESS"` in the examples below.
+
+  * Verification of the implementation contract and the proxy contract.
+
+    ```bash
+    forge verify-contract \
+        --chain goerli \
+        --watch \
+        "IMPLEMENTATION ADDRESS" \
+        --constructor-args $(cast abi-encode "constructor()") \
+        contracts/UpgradeableContract.sol:UpgradeableContract
+    ```
+
+    ```bash
+    forge verify-contract \
+        --chain goerli \
+        --watch \
+        "PROXY ADDRESS" \
+        --constructor-args \
+            $(cast abi-encode \
+                "constructor(address,bytes)" \
+                "IMPLEMENTATION ADDRESS" \
+                $(cast abi-encode "initialize(address)" "DEPLOYER ADDRESS") \
+            ) \
+        contracts/proxy/ERC1967Proxy.sol:ERC1967Proxy
+    ```
+
+## Adding and removing dependencies
+
+🧭 Whenever you install new libraries / dependencies using Foundry (using `foundry install`), make sure to update your `remappings.txt` file by running `forge remappings > remappings.txt`.
+
+✂️ This boilerplate template includes a few different libs which you most likely won't need. Feel free to remove them from your setup – for example `forge remove safe-contracts` to remove the `safe-contracts` lib.
+
+## Opinions and feedback
+
+We're all learning. Feedback and contributions most welcome!
+
+### 💬 ⌁ Contact info
+
+* 🎉 If you think this is 🌟🤩🌹🪄🌈 and want to connect — shoot me a message and say hi. 👋<br/>
+* 🤬 If you think this is 💩🐛💥🙅👎 and want to help out — shoot me a message and say hi. 🙏
+
+```
+twitter ◼️ https://twitter.com/carloscaraaro
+coa.eth ◼️ 0x39bEb60bc4c1b8b0eBeEDC515c7A56e7DfB3a5A9
+discord ◼️ carloscar#0001
+devnull ◼️ hello@carloscar.com
+```
+
+<sup>**If we're not already friends on the internet, the risk is high that I'll miss your message.**</sub>
