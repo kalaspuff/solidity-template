@@ -31,3 +31,4 @@ typechain-types/
 /.dcignore
 *.code-workspace
 .make.functions.sh
+/typescript
