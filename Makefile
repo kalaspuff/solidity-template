@@ -42,7 +42,7 @@ forge-build:
 
 .PHONY: forge-test
 forge-test:
-	@runcmd forge test -vvvv
+	@runcmd forge test -vvv
 
 .PHONY: forge-lint
 forge-lint:
