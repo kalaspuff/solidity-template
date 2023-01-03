@@ -1,6 +1,4 @@
-ifndef VERBOSE
 .SILENT:
-endif
 
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 
