@@ -6,7 +6,7 @@
     "search.exclude": {
         "lib/**/forge-std": true,
         "lib/**/*.t.sol": true,
-        "lib/**/*.s.sol": true,
+        "lib/**/*.s.sol": true
     },
     "files.exclude": {
         "broadcast": true,
