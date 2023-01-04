@@ -10,7 +10,7 @@ runcmd() {
 	script_cmd="script -q /dev/null ${_cmd[@]} >&1";
 	script -q /dev/null -c echo 2> /dev/null > /dev/null && script_cmd="script -q /dev/null -c \"${_cmd[@]}\" >&1";
 
-	printf "\e[90;1m[\e[032;1mmake \e[90;1m➔ \e[033;1mcmd\e[90;1m]\e[0m ≡ \e[90m$_cmd\e[0m\n" \
+	printf "\e[90;1m[\e[94;1;3mmake \e[0;90;1m➔ \e[0;94;1;3mcmd\e[0;90;1m]\e[0m ≡ \e[90m$_cmd\e[0m\n" \
 		&& ( \
 			cmd_output=$(eval "$script_cmd" | tee /dev/tty; exit ${PIPESTATUS[0]}); cmd_exit_code=$?; \
 			[ -z "$cmd_output" ] || ([ -z "$(tr -d '[:space:]' <<< $cmd_output)" ] && printf "\e[1A"); \
@@ -30,7 +30,7 @@ $(shell sed -n '/^: BEGIN/,/^: END/p' $(THIS_FILE) > .make.functions.sh)
 SHELL := /bin/bash --init-file .make.functions.sh -i
 
 default:
-	printf "\e[90musage:\e[0m\n"
+	printf "\e[37musage:\e[0m\n"
 	printf "  \e[90m$$ \e[0;97;1mmake \e[0;92;1mbuild         \e[0;90m➔ \e[32;3mbuild contracts \e[0m\n"
 	printf "  \e[90m$$ \e[0;97;1mmake \e[0;92;1mtest          \e[0;90m➔ \e[32;3mrun unit tests \e[0m\n"
 	printf "  \e[90m$$ \e[0;97;1mmake \e[0;92;1mlint          \e[0;90m➔ \e[32;3mlint code \e[0m\n"
