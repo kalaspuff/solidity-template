@@ -21,6 +21,7 @@
 *.ini eol=lf
 *.lock eol=lf
 *.conf eol=lf
+*.code-workspace eol=lf
 LICENSE eol=lf
 Dockerfile* eol=lf
 Makefile* -whitespace eol=lf

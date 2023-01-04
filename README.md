@@ -2,6 +2,8 @@
 
 *This is a boilerplate repo providing a base setup to get started experimenting with smart contracts built in Solidity. This template should preferably be used with the [Foundry toolkit](https://github.com/foundry-rs/foundry). The setup is mostly tested on macOS.*
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=master&repo=581580533)
+
 ### Smart Contract Development in Solidity for Ethereum
 
 * ✨ Developer experience improvements using good defaults and with the goal to follow best practices.

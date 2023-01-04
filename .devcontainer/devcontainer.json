@@ -26,6 +26,13 @@
                 "ms-vscode-remote.remote-containers",
                 "kdcro101.favorites"
             ]
+        },
+        "codespaces": {
+            "openFiles": [
+                "README.md",
+                "contracts/SimpleContract.sol",
+                "contracts/UpgradeableContract.sol"
+            ]
         }
     },
     "remoteEnv": {
