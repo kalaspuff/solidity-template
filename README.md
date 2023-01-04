@@ -88,7 +88,7 @@ Build the contracts using `make build` or `forge build`.
 
 ```console
 user@cpu:~/code/my-contract $ make build
-[make ➔ cmd] ≡ forge build
+[make: cmd] ➔ forge build
 [⠊] Compiling...
 [⠘] Solc 0.8.17 finished
 Compiler run successful
@@ -102,8 +102,8 @@ For all other linting needs – run lint checks with `make lint` or manually wit
 
 ```console
 user@cpu:~/code/my-contract $ make lint
-[make ➔ cmd] ≡ npx solhint contracts/**/*.sol
-[make ➔ cmd] ≡ forge fmt --check
+[make: cmd] ➔ npx solhint contracts/**/*.sol
+[make: cmd] ➔ forge fmt --check
 ```
 
 ### 🧪 ⌁ Test cases implemented in Solidity
@@ -112,7 +112,7 @@ Run the Solidity tests that lives in the [`./test`](test/) folder with `make tes
 
 ```console
 user@cpu:~/code/my-contract $ make test
-[make ➔ cmd] ≡ forge test
+[make: cmd] ➔ forge test
 Running 2 tests for test/SimpleContract.t.sol:SimpleContractTest            ✔︎✔︎
 Running 5 tests for test/UpgradeableContract.t.sol:UpgradeableContractTest  ✔︎✔︎✔︎✔︎✔︎
 ```

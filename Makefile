@@ -10,7 +10,7 @@ runcmd() {
 	script_cmd="script -q /dev/null ${_cmd[@]} >&1";
 	script -q /dev/null -c echo 2> /dev/null > /dev/null && script_cmd="script -q /dev/null -c \"${_cmd[@]}\" >&1";
 
-	printf "\e[90;1m[\e[94;1;3mmake \e[0;90;1m➔ \e[0;94;1;3mcmd\e[0;90;1m]\e[0m ≡ \e[90m$_cmd\e[0m\n" \
+	printf "\e[90;1m[\e[90;1mmake: \e[0;90;1mcmd\e[0;90;1m]\e[0m \e[0;93;1m➔ \e[97;1m$_cmd\e[0m\n" \
 		&& ( \
 			cmd_output=$(eval "$script_cmd" | tee /dev/tty; exit ${PIPESTATUS[0]}); cmd_exit_code=$?; \
 			[ -z "$cmd_output" ] || ([ -z "$(tr -d '[:space:]' <<< $cmd_output)" ] && printf "\e[1A"); \
