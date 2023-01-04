@@ -60,7 +60,7 @@
         "lib/**/*.diff": true,
         "lib/**/*.spec": true,
         "lib/solmate/audits": true,
-        "lib/solmate/lib/weird-erc20/lib": true
+        "lib/solmate/lib/weird-erc20/lib": true,
         "lib/solmate/lib/weird-erc20/nix": true,
         "lib/safe-contracts/src": true,
         "lib/safe-contracts/types": true,
