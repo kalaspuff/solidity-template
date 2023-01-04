@@ -287,7 +287,7 @@ This is only needed to manually verify contracts that weren't verified during th
 
 🧭 Whenever you install new libraries / dependencies using Foundry (using `foundry install`), make sure to update your `remappings.txt` file by running `forge remappings > remappings.txt`.
 
-✂️ This boilerplate template includes a few different libs which you most likely won't need. Feel free to remove them from your setup – for example `forge remove safe-contracts` to remove the `safe-contracts` lib.
+✂️ This boilerplate template includes a few different libs which you most likely won't need. Feel free to remove them from your setup – for example `forge remove safe-contracts` to remove the `safe-contracts` library.
 
 ## Opinions and feedback
 
