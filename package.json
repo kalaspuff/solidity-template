@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "npm": "^9.2.0",
     "solhint": "^3.3.7"
   }
 }
