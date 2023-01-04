@@ -35,7 +35,8 @@
     },
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
-        "terminal.integrated.confirmOnKill": "never"
+        "terminal.integrated.confirmOnKill": "never",
+        "extensions.ignoreRecommendations": true
     },
     "postCreateCommand": "make install"
 }
