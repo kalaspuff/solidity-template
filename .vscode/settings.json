@@ -80,5 +80,6 @@
     "files.eol": "\n",
     "terminal.integrated.confirmOnKill": "never",
     "debug.terminal.clearBeforeReusing": true,
-    "explorer.excludeGitIgnore": false
+    "explorer.excludeGitIgnore": false,
+    "favorites.sortDirection": "ASC"
 }

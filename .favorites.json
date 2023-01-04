@@ -1,0 +1,308 @@
+[
+    {
+        "type": "Group",
+        "name": "1. contracts",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "zZ7qf2cwXvVo5jTN"
+    },
+    {
+        "type": "Group",
+        "name": "6. dotfiles + config",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "lgiZxzynmV1X6LGY",
+        "iconColor": "rgb(128, 128, 128)"
+    },
+    {
+        "type": "Group",
+        "name": "5. documentation",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "AzoDUGure87vwmJk",
+        "iconColor": "rgb(255, 250, 205)"
+    },
+    {
+        "type": "Group",
+        "name": "4. libs",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "2n4Bisc8QpVEoyl5",
+        "iconColor": "rgb(255, 105, 180)"
+    },
+    {
+        "type": "Group",
+        "name": "3. deploy scripts",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "4OFlGhvSIEa8c9PW",
+        "iconColor": "rgb(106, 90, 205)"
+    },
+    {
+        "type": "Group",
+        "name": "2. tests",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "1GSh2luOkX7IQoAj",
+        "iconColor": "rgb(95, 158, 160)"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/contracts/SimpleContract.sol",
+        "parent_id": "zZ7qf2cwXvVo5jTN",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "contracts/SimpleContract.sol",
+        "id": "OmiwTIYz1tZBSnQc",
+        "label": "🎓 SimpleContract.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/contracts/UpgradeableContract.sol",
+        "parent_id": "zZ7qf2cwXvVo5jTN",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "contracts/UpgradeableContract.sol",
+        "id": "v3186DMlyCFGaReW",
+        "label": "🪄 UpgradeableContract.sol"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/.vscode",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".vscode",
+        "id": "dv2tzgo7YVP4NGeR"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/.github",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".github",
+        "id": "7Cgbw5O0uzyJRtlr"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/.devcontainer",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".devcontainer",
+        "id": "9IRgjAPiBo15sz6r"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/test/SimpleContract.t.sol",
+        "parent_id": "1GSh2luOkX7IQoAj",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "test/SimpleContract.t.sol",
+        "id": "lJYNzUCKVu4oBQpA",
+        "label": "🧪 SimpleContract.t.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/test/UpgradeableContract.t.sol",
+        "parent_id": "1GSh2luOkX7IQoAj",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "test/UpgradeableContract.t.sol",
+        "id": "GUmy0jvZeDqJr94d",
+        "label": "🧪 UpgradeableContract.t.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.env",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".env",
+        "id": "IPlD8wgnyEZGrOiL"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.env.example",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".env.example",
+        "id": "SRZU2CAGoNE8WYx3"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.gitattributes",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".gitattributes",
+        "id": "JyXz8D1UH3fuRoPB"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.gitignore",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".gitignore",
+        "id": "br20ZPjy7axQmnCM"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.gitmodules",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".gitmodules",
+        "id": "EFTWJjUOL3XxfZcm"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.solhint.json",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".solhint.json",
+        "id": "vc8oF1rhXpi6Ynwm"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/foundry.toml",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "foundry.toml",
+        "id": "nGXT5Ipzcyhtf0FC"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/LICENSE",
+        "parent_id": "AzoDUGure87vwmJk",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "LICENSE",
+        "id": "AzPm0EFS5h9jHdlT"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/Makefile",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "Makefile",
+        "id": "pbsJK8AeD1U6G0rF"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/package-lock.json",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "package-lock.json",
+        "id": "pfwcs0OmH8vFn4To"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/package.json",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "package.json",
+        "id": "Dm0corsPEiMqkIRF"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/README.md",
+        "parent_id": "AzoDUGure87vwmJk",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "README.md",
+        "id": "UhTiHmYbGecDxVzC"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/remappings.txt",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "remappings.txt",
+        "id": "bkPB8vZKnVIX3TDs"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/forge-std/src",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/forge-std/src",
+        "id": "VzO36oZfiugmIW2M",
+        "label": "forge-std"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts",
+        "id": "8DyoCWjUKtiqSZmF",
+        "label": "openzeppelin"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts",
+        "id": "xROwzVHAm13hBYI7",
+        "label": "openzeppelin-upgradeable"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts",
+        "id": "tDVwqKvd6PT5g0AW",
+        "label": "safe"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/solmate/src",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/solmate/src",
+        "id": "YhZA4WOCJFQr9Tc8",
+        "label": "solmate"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/contracts/proxy/ERC1967Proxy.sol",
+        "parent_id": "zZ7qf2cwXvVo5jTN",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "contracts/proxy/ERC1967Proxy.sol",
+        "id": "4OAKTSq5kdciMhwF",
+        "label": "✨ ERC1967Proxy.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/script/deploy/DeployBase.s.sol",
+        "parent_id": "4OFlGhvSIEa8c9PW",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "script/deploy/DeployBase.s.sol",
+        "id": "qEowLWxnXTZzUKMR",
+        "label": "🧩 DeployBase.t.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/script/deploy/DeploySimple.s.sol",
+        "parent_id": "4OFlGhvSIEa8c9PW",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "script/deploy/DeploySimple.s.sol",
+        "id": "e8MCpOrLcKb0quXI",
+        "label": "🎓 DeploySimple.t.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/script/deploy/DeployUpgradeable.s.sol",
+        "parent_id": "4OFlGhvSIEa8c9PW",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "script/deploy/DeployUpgradeable.s.sol",
+        "id": "NFmK76cqwxvuLHzD",
+        "label": "🪄 DeployUpgradeable.t.sol"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.favorites.json",
+        "parent_id": "lgiZxzynmV1X6LGY",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".favorites.json",
+        "id": "Mh0G4Due3aUjXtpR"
+    }
+]

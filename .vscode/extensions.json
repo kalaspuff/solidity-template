@@ -6,7 +6,8 @@
         "eamodio.gitlens",
         "DavidAnson.vscode-markdownlint",
         "VisualStudioExptTeam.vscodeintellicode",
-        "ms-vscode-remote.remote-containers"
+        "ms-vscode-remote.remote-containers",
+        "kdcro101.favorites"
     ],
     "unwantedRecommendations": []
 }
