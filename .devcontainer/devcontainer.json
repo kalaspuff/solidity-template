@@ -33,8 +33,7 @@
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.confirmOnKill": "never",
-        "extensions.ignoreRecommendations": true,
-        "dotfiles.repository": "kalaspuff/dotfiles"
+        "extensions.ignoreRecommendations": true
     },
     "postCreateCommand": "make install"
 }
