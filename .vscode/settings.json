@@ -81,5 +81,11 @@
     "terminal.integrated.confirmOnKill": "never",
     "debug.terminal.clearBeforeReusing": true,
     "explorer.excludeGitIgnore": false,
-    "favorites.sortDirection": "ASC"
+    "favorites.sortDirection": "ASC",
+    "markdownlint.config": {
+        "default": true,
+        "MD001": false,
+        "MD033": false,
+        "MD040": false
+    }
 }
