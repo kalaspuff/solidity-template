@@ -5,7 +5,8 @@
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
-        "id": "zZ7qf2cwXvVo5jTN"
+        "id": "zZ7qf2cwXvVo5jTN",
+        "iconColor": "rgb(0, 250, 154)"
     },
     {
         "type": "Group",
@@ -23,7 +24,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "AzoDUGure87vwmJk",
-        "iconColor": "rgb(255, 250, 205)"
+        "iconColor": "rgb(255, 165, 0)"
     },
     {
         "type": "Group",
@@ -41,7 +42,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "4OFlGhvSIEa8c9PW",
-        "iconColor": "rgb(106, 90, 205)"
+        "iconColor": "rgb(255, 127, 80)"
     },
     {
         "type": "Group",
@@ -50,7 +51,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "1GSh2luOkX7IQoAj",
-        "iconColor": "rgb(95, 158, 160)"
+        "iconColor": "rgb(70, 130, 180)"
     },
     {
         "type": "File",
