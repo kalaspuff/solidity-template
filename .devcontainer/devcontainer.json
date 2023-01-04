@@ -37,5 +37,5 @@
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.confirmOnKill": "never"
     },
-    "postCreateCommand": "git submodule update --init"
+    "postCreateCommand": "make install"
 }
