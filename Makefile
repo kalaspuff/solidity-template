@@ -75,6 +75,10 @@ npm-install:
 git-submodule-update:
 	@runcmd git submodule update --init --recursive
 
+.PHONY: dotenv-setup
+dotenv-setup:
+	@runcmd "[ -e .env ] || cp .env.example .env"
+
 build: forge-build
 contract: build
 contracts: build
@@ -92,4 +96,4 @@ formatting: format
 
 clean: forge-clean
 
-install: git-submodule-update npm-install
+install: git-submodule-update npm-install dotenv-setup
