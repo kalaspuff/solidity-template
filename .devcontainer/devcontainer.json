@@ -5,10 +5,7 @@
         "ghcr.io/devcontainers/features/github-cli:1": {},
         "ghcr.io/devcontainers/features/node:1": {},
         "ghcr.io/devcontainers-contrib/features/bash-command:1": {
-            "command": "curl -L https://foundry.paradigm.xyz | sudo -u ${_REMOTE_USER} bash && sudo -u ${_REMOTE_USER} ${_REMOTE_USER_HOME}/.foundry/bin/foundryup && sudo -u ${_REMOTE_USER} git config --global --add safe.directory /workspaces/solidity-template"
-        },
-        "ghcr.io/devcontainers-contrib/features/npm-package:1": {
-            "package": "solhint"
+            "command": "curl -L https://foundry.paradigm.xyz | sudo -u ${_REMOTE_USER} bash && sudo -u ${_REMOTE_USER} ${_REMOTE_USER_HOME}/.foundry/bin/foundryup && git config --system --add safe.directory /workspaces/solidity-template"
         },
         "ghcr.io/stuartleeks/dev-container-features/shell-history:0": {},
         "ghcr.io/guiyomh/features/vim:0": {},
@@ -36,7 +33,8 @@
     "settings": {
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.confirmOnKill": "never",
-        "extensions.ignoreRecommendations": true
+        "extensions.ignoreRecommendations": true,
+        "dotfiles.repository": "kalaspuff/dotfiles"
     },
     "postCreateCommand": "make install"
 }
