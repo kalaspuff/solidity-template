@@ -1,7 +1,7 @@
 [
     {
         "type": "Group",
-        "name": "contracts",
+        "name": "⇾ contracts",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -10,7 +10,7 @@
     },
     {
         "type": "Group",
-        "name": "​​tests",
+        "name": "⇾ ​​tests",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -19,7 +19,7 @@
     },
     {
         "type": "Group",
-        "name": "​​​deployment",
+        "name": "⇾ ​​​deployment",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -28,7 +28,7 @@
     },
     {
         "type": "Group",
-        "name": "​​​​libs",
+        "name": "⇾ ​​​​lib",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -37,7 +37,7 @@
     },
     {
         "type": "Group",
-        "name": "​​​​​readme + docs",
+        "name": "⇾ ​​​​​readme",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -46,7 +46,7 @@
     },
     {
         "type": "Group",
-        "name": "​​​​​​dotfiles + config",
+        "name": "⇾ ​​​​​​dotfiles config",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -285,7 +285,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "h3IZScnoRJtqC2XU",
-        "iconColor": "rgb(225, 165, 230)"
+        "iconColor": "rgb(225, 155, 215)"
     },
     {
         "type": "Group",
@@ -294,7 +294,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "48nCVzQyj3sDv2WS",
-        "iconColor": "rgb(225, 165, 230)"
+        "iconColor": "rgb(225, 155, 215)"
     },
     {
         "type": "Directory",
@@ -519,7 +519,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "UJcTWmliSH10agZO",
-        "iconColor": "rgb(255, 165, 220)"
+        "iconColor": "rgb(225, 155, 215)"
     },
     {
         "type": "Directory",
@@ -627,7 +627,7 @@
         "workspaceRoot": null,
         "workspacePath": null,
         "id": "sJjRoI7wvqOyaeSC",
-        "iconColor": "rgb(255, 165, 220)"
+        "iconColor": "rgb(225, 155, 215)"
     },
     {
         "type": "Directory",
