@@ -10,13 +10,16 @@
 * 🪄 Sensible setup for linting, code formatting — includes VSCode settings for auto code style, etc.
 * 📚 Includes some common libraries (such as OpenZeppelin, solmate and contracts from Safe).
 * 🎉 Aims to make it easy for devs to prototype and code contracts without the effort of the initial chores.
-* 💫 There's also a dev container setup included with the repo to make it work with codespaces, etc.
 
 ### GitHub Codespaces
 
-It takes ~ 90 seconds for the [codespace](https://github.com/features/codespaces) to install and spin up. It provides a complete dev setup with all the dependencies and VSCode extensions installed. Everything needed to develop, build and deploy contracts. ✌️
+There's also a dev container setup included in this repo to make it super easy to set up with codespaces.
+
+It takes ~ 90 seconds for the [codespace](https://github.com/features/codespaces) to install and spin up. It provides a complete dev setup with all the dependencies and VSCode extensions installed. Everything needed to develop, build and deploy contracts. 💫
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=master&repo=581580533)
+
+<a href="https://github.com/codespaces/new?hide_repo_select=true&ref=master&repo=581580533"><img width="1589" alt="codespace-vscode-screenshot" src="https://user-images.githubusercontent.com/89139/210704071-3c1c5136-9d60-4beb-9f3d-a0409b57475d.png"></a>
 
 ### Contributions
 
@@ -24,7 +27,7 @@ If you find any bugs 🐛 in the contracts, in this documentation or if you have
 
 ## Get started
 
-These instructions expect you to be running a Linux or macOS system with Foundry and build essentials already installed. This *might* also work on another setup (such as WSL or other shells) where you can use environment values + use the Foundry CLI (eventually USB permissions also required in case you need to access a USB connected cold wallet).
+These section is for setting up the environment without the use of GitHub Codespaces. The instructions expect you to be running a Linux or macOS system with Foundry and build essentials already installed.
 
 ### 🏃 ⌁ Initialize and install dependencies
 
@@ -70,7 +73,7 @@ origin https://github.com/coder/my-contract (push)
 
 ## Development
 
-A couple of `make` commands are available for convenience and quality of life.
+A couple of `make` commands are available for convenience and general quality of life.
 
 ```console
 user@cpu:~/code/my-contract $ make
