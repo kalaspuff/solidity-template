@@ -1,7 +1,7 @@
 [
     {
         "type": "Group",
-        "name": "1. contracts",
+        "name": "contracts",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -10,34 +10,16 @@
     },
     {
         "type": "Group",
-        "name": "6. dotfiles + config",
+        "name": "​​tests",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
-        "id": "lgiZxzynmV1X6LGY",
-        "iconColor": "rgb(128, 128, 128)"
+        "id": "1GSh2luOkX7IQoAj",
+        "iconColor": "rgb(70, 130, 180)"
     },
     {
         "type": "Group",
-        "name": "5. documentation",
-        "parent_id": null,
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "AzoDUGure87vwmJk",
-        "iconColor": "rgb(255, 165, 0)"
-    },
-    {
-        "type": "Group",
-        "name": "4. libs",
-        "parent_id": null,
-        "workspaceRoot": null,
-        "workspacePath": null,
-        "id": "2n4Bisc8QpVEoyl5",
-        "iconColor": "rgb(255, 105, 180)"
-    },
-    {
-        "type": "Group",
-        "name": "3. deploy scripts",
+        "name": "​​​deployment",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
@@ -46,12 +28,30 @@
     },
     {
         "type": "Group",
-        "name": "2. tests",
+        "name": "​​​​libs",
         "parent_id": null,
         "workspaceRoot": null,
         "workspacePath": null,
-        "id": "1GSh2luOkX7IQoAj",
-        "iconColor": "rgb(70, 130, 180)"
+        "id": "2n4Bisc8QpVEoyl5",
+        "iconColor": "rgb(255, 105, 180)"
+    },
+    {
+        "type": "Group",
+        "name": "​​​​​readme + docs",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "AzoDUGure87vwmJk",
+        "iconColor": "rgb(255, 165, 0)"
+    },
+    {
+        "type": "Group",
+        "name": "​​​​​​dotfiles + config",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "lgiZxzynmV1X6LGY",
+        "iconColor": "rgb(128, 128, 128)"
     },
     {
         "type": "File",
