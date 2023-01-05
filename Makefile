@@ -37,7 +37,7 @@ default:
 		  \e[90m$$ \e[0;97;1mmake \e[0;92;1minstall       \e[0;90m➔ \e[32;3minstall dependencies \e[0m\n \
 		  \e[90m$$ \e[0;97;1mmake \e[0;92;1mformat        \e[0;90m➔ \e[32;3mapply code style formatting \e[0m\n \
 		  \e[90m$$ \e[0;97;1mmake \e[0;92;1mclean         \e[0;90m➔ \e[32;3mremove build artifacts \e[0m\n \
-	""" | sed -e 's/^[  \t]\{1,\}\(.\)/  \1/'
+	""" | sed -e 's/^[ \t	]\{1,\}\(.\)/  \1/'
 
 .PHONY: forge-build
 forge-build:
