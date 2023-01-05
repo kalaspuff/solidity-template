@@ -218,51 +218,6 @@
         "id": "bkPB8vZKnVIX3TDs"
     },
     {
-        "type": "Directory",
-        "name": "/workspaces/solidity-template/lib/forge-std/src",
-        "parent_id": "2n4Bisc8QpVEoyl5",
-        "workspaceRoot": "/workspaces/solidity-template",
-        "workspacePath": "lib/forge-std/src",
-        "id": "VzO36oZfiugmIW2M",
-        "label": "forge-std"
-    },
-    {
-        "type": "Directory",
-        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts",
-        "parent_id": "2n4Bisc8QpVEoyl5",
-        "workspaceRoot": "/workspaces/solidity-template",
-        "workspacePath": "lib/openzeppelin-contracts/contracts",
-        "id": "8DyoCWjUKtiqSZmF",
-        "label": "openzeppelin"
-    },
-    {
-        "type": "Directory",
-        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts",
-        "parent_id": "2n4Bisc8QpVEoyl5",
-        "workspaceRoot": "/workspaces/solidity-template",
-        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts",
-        "id": "xROwzVHAm13hBYI7",
-        "label": "openzeppelin-upgradeable"
-    },
-    {
-        "type": "Directory",
-        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts",
-        "parent_id": "2n4Bisc8QpVEoyl5",
-        "workspaceRoot": "/workspaces/solidity-template",
-        "workspacePath": "lib/safe-contracts/contracts",
-        "id": "tDVwqKvd6PT5g0AW",
-        "label": "safe"
-    },
-    {
-        "type": "Directory",
-        "name": "/workspaces/solidity-template/lib/solmate/src",
-        "parent_id": "2n4Bisc8QpVEoyl5",
-        "workspaceRoot": "/workspaces/solidity-template",
-        "workspacePath": "lib/solmate/src",
-        "id": "YhZA4WOCJFQr9Tc8",
-        "label": "solmate"
-    },
-    {
         "type": "File",
         "name": "/workspaces/solidity-template/contracts/proxy/ERC1967Proxy.sol",
         "parent_id": "zZ7qf2cwXvVo5jTN",
@@ -305,5 +260,345 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".favorites.json",
         "id": "Mh0G4Due3aUjXtpR"
+    },
+    {
+        "type": "Group",
+        "name": "openzeppelin (upgradeable)",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "h3IZScnoRJtqC2XU",
+        "iconColor": "rgb(225, 165, 230)"
+    },
+    {
+        "type": "Group",
+        "name": "openzeppelin (standard)",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "48nCVzQyj3sDv2WS",
+        "iconColor": "rgb(225, 165, 230)"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/access",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/access",
+        "id": "slvaPY9XDAIk1m83"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/crosschain",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/crosschain",
+        "id": "2IL6hRKkB0yauMCE"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/finance",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/finance",
+        "id": "3As8CHvP6IoMJEVR"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/governance",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/governance",
+        "id": "1LPBboldOeNJ6Vtx"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/interfaces",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/interfaces",
+        "id": "B7YaSZvn93zIpchH"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/metatx",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/metatx",
+        "id": "RecKkaWD1XpVPqJB"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/mocks",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/mocks",
+        "id": "HqCbgSvLtVYj8G79"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/proxy",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/proxy",
+        "id": "I0LnU7l9FZxhmXky"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/security",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/security",
+        "id": "0OLzUncPWais4SQt"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/token",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/token",
+        "id": "TJgjLSp3qrYGf0zO"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/utils",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/utils",
+        "id": "8PBW7VLlYm0exw6X"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts/contracts/vendor",
+        "parent_id": "48nCVzQyj3sDv2WS",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts/contracts/vendor",
+        "id": "oC7XA4Wtp3Juc9SP"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/access",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/access",
+        "id": "y5Xb1h7LVDUslt2E"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/crosschain",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/crosschain",
+        "id": "bBKPeWD7HaMz6JNo"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/finance",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/finance",
+        "id": "E8ODmxvdyBrJMcfH"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/governance",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/governance",
+        "id": "U5PtBmZ4Kc7gNsJy"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/interfaces",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/interfaces",
+        "id": "Tajo5RQdybGZ9VD1"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/metatx",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/metatx",
+        "id": "vNTfrSLPYJpwQ6qd"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/mocks",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/mocks",
+        "id": "acgSzEhr3UbpLvZB"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/proxy",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/proxy",
+        "id": "afOmA0RwYP8zVKUC"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/security",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/security",
+        "id": "KjFZWgHR2z9NlycM"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/token",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/token",
+        "id": "b5N0ufAw12vVgIpJ"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/utils",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/utils",
+        "id": "tqe046wbx2ikXL8R"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/openzeppelin-contracts-upgradeable/contracts/vendor",
+        "parent_id": "h3IZScnoRJtqC2XU",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/vendor",
+        "id": "jX6BOUbgf9soi18S"
+    },
+    {
+        "type": "Group",
+        "name": "safe",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "UJcTWmliSH10agZO",
+        "iconColor": "rgb(255, 165, 220)"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/accessors",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/accessors",
+        "id": "1Iiov9NHTAJEb3Ua"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/base",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/base",
+        "id": "CWzhTb3ZGDciHN5t"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/common",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/common",
+        "id": "BS1Lxc7wIzofvUnO"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/examples",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/examples",
+        "id": "4VilJE6p7hb2YaDH"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/external",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/external",
+        "id": "HgPxBV6yhQTdkM3S"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/handler",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/handler",
+        "id": "bFGRmeDTC7OWLq5S"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/interfaces",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/interfaces",
+        "id": "wrZdipyxFfVkCB6s"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/libraries",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/libraries",
+        "id": "lfJVitCyFkLMZB0I"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/proxies",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/proxies",
+        "id": "3ZbNGYv5XuAehByx"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/GnosisSafe.sol",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/GnosisSafe.sol",
+        "id": "WJyrGRFAX07Z1cwE"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/lib/safe-contracts/contracts/GnosisSafeL2.sol",
+        "parent_id": "UJcTWmliSH10agZO",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/safe-contracts/contracts/GnosisSafeL2.sol",
+        "id": "cH6SBvPMxJqpOiDh"
+    },
+    {
+        "type": "Group",
+        "name": "solmate",
+        "parent_id": "2n4Bisc8QpVEoyl5",
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "sJjRoI7wvqOyaeSC",
+        "iconColor": "rgb(255, 165, 220)"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/solmate/src/auth",
+        "parent_id": "sJjRoI7wvqOyaeSC",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/solmate/src/auth",
+        "id": "YANS7TK2M1VWbqav"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/solmate/src/tokens",
+        "parent_id": "sJjRoI7wvqOyaeSC",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/solmate/src/tokens",
+        "id": "ySuNdB8iWJEqfCVL"
+    },
+    {
+        "type": "Directory",
+        "name": "/workspaces/solidity-template/lib/solmate/src/utils",
+        "parent_id": "sJjRoI7wvqOyaeSC",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": "lib/solmate/src/utils",
+        "id": "cMT6NObxRIQdXn0e"
     }
 ]
