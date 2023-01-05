@@ -60,7 +60,7 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "contracts/SimpleContract.sol",
         "id": "OmiwTIYz1tZBSnQc",
-        "label": "🎓 SimpleContract.sol"
+        "label": "✨ SimpleContract.sol"
     },
     {
         "type": "File",
@@ -69,7 +69,7 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "contracts/UpgradeableContract.sol",
         "id": "v3186DMlyCFGaReW",
-        "label": "🪄 UpgradeableContract.sol"
+        "label": "🚧 UpgradeableContract.sol"
     },
     {
         "type": "Directory",
@@ -77,7 +77,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".vscode",
-        "id": "dv2tzgo7YVP4NGeR"
+        "id": "dv2tzgo7YVP4NGeR",
+        "label": "💻 .vscode"
     },
     {
         "type": "Directory",
@@ -85,7 +86,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".github",
-        "id": "7Cgbw5O0uzyJRtlr"
+        "id": "7Cgbw5O0uzyJRtlr",
+        "label": "🐙 .github"
     },
     {
         "type": "Directory",
@@ -93,7 +95,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".devcontainer",
-        "id": "9IRgjAPiBo15sz6r"
+        "id": "9IRgjAPiBo15sz6r",
+        "label": "📦 .devcontainer"
     },
     {
         "type": "File",
@@ -119,7 +122,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".env",
-        "id": "IPlD8wgnyEZGrOiL"
+        "id": "IPlD8wgnyEZGrOiL",
+        "label": "🗝 .env"
     },
     {
         "type": "File",
@@ -127,7 +131,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".env.example",
-        "id": "SRZU2CAGoNE8WYx3"
+        "id": "SRZU2CAGoNE8WYx3",
+        "label": "🗝 .env.example"
     },
     {
         "type": "File",
@@ -135,7 +140,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".gitattributes",
-        "id": "JyXz8D1UH3fuRoPB"
+        "id": "JyXz8D1UH3fuRoPB",
+        "label": "⌨️ .gitattributes"
     },
     {
         "type": "File",
@@ -143,7 +149,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".gitignore",
-        "id": "br20ZPjy7axQmnCM"
+        "id": "br20ZPjy7axQmnCM",
+        "label": "🚫 .gitignore"
     },
     {
         "type": "File",
@@ -151,7 +158,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".gitmodules",
-        "id": "EFTWJjUOL3XxfZcm"
+        "id": "EFTWJjUOL3XxfZcm",
+        "label": "🗂 .gitmodules"
     },
     {
         "type": "File",
@@ -159,7 +167,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".solhint.json",
-        "id": "vc8oF1rhXpi6Ynwm"
+        "id": "vc8oF1rhXpi6Ynwm",
+        "label": "🪄 .solhint.json"
     },
     {
         "type": "File",
@@ -167,7 +176,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "foundry.toml",
-        "id": "nGXT5Ipzcyhtf0FC"
+        "id": "nGXT5Ipzcyhtf0FC",
+        "label": "🏭 foundry.toml"
     },
     {
         "type": "File",
@@ -175,7 +185,8 @@
         "parent_id": "AzoDUGure87vwmJk",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "LICENSE",
-        "id": "AzPm0EFS5h9jHdlT"
+        "id": "AzPm0EFS5h9jHdlT",
+        "label": "👓 LICENSE"
     },
     {
         "type": "File",
@@ -183,7 +194,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "Makefile",
-        "id": "pbsJK8AeD1U6G0rF"
+        "id": "pbsJK8AeD1U6G0rF",
+        "label": "💄 Makefile"
     },
     {
         "type": "File",
@@ -191,7 +203,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "package-lock.json",
-        "id": "pfwcs0OmH8vFn4To"
+        "id": "pfwcs0OmH8vFn4To",
+        "label": "☕️ package-lock.json"
     },
     {
         "type": "File",
@@ -199,7 +212,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "package.json",
-        "id": "Dm0corsPEiMqkIRF"
+        "id": "Dm0corsPEiMqkIRF",
+        "label": "☕️ package.json"
     },
     {
         "type": "File",
@@ -207,7 +221,8 @@
         "parent_id": "AzoDUGure87vwmJk",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "README.md",
-        "id": "UhTiHmYbGecDxVzC"
+        "id": "UhTiHmYbGecDxVzC",
+        "label": "📜 README.md"
     },
     {
         "type": "File",
@@ -215,7 +230,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "remappings.txt",
-        "id": "bkPB8vZKnVIX3TDs"
+        "id": "bkPB8vZKnVIX3TDs",
+        "label": "🚏 remappings.txt"
     },
     {
         "type": "File",
@@ -224,7 +240,7 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "contracts/proxy/ERC1967Proxy.sol",
         "id": "4OAKTSq5kdciMhwF",
-        "label": "✨ ERC1967Proxy.sol"
+        "label": "🚚 ERC1967Proxy.sol"
     },
     {
         "type": "File",
@@ -242,7 +258,7 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "script/deploy/DeploySimple.s.sol",
         "id": "e8MCpOrLcKb0quXI",
-        "label": "🎓 DeploySimple.t.sol"
+        "label": "🚀 DeploySimple.t.sol"
     },
     {
         "type": "File",
@@ -251,7 +267,7 @@
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "script/deploy/DeployUpgradeable.s.sol",
         "id": "NFmK76cqwxvuLHzD",
-        "label": "🪄 DeployUpgradeable.t.sol"
+        "label": "🚀 DeployUpgradeable.t.sol"
     },
     {
         "type": "File",
@@ -259,7 +275,8 @@
         "parent_id": "lgiZxzynmV1X6LGY",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": ".favorites.json",
-        "id": "Mh0G4Due3aUjXtpR"
+        "id": "Mh0G4Due3aUjXtpR",
+        "label": "🥰 .favorites.json"
     },
     {
         "type": "Group",
@@ -285,7 +302,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/access",
-        "id": "slvaPY9XDAIk1m83"
+        "id": "slvaPY9XDAIk1m83",
+        "label": "🎟 access"
     },
     {
         "type": "Directory",
@@ -293,7 +311,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/crosschain",
-        "id": "2IL6hRKkB0yauMCE"
+        "id": "2IL6hRKkB0yauMCE",
+        "label": "⛓ crosschain"
     },
     {
         "type": "Directory",
@@ -301,7 +320,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/finance",
-        "id": "3As8CHvP6IoMJEVR"
+        "id": "3As8CHvP6IoMJEVR",
+        "label": "💰 finance"
     },
     {
         "type": "Directory",
@@ -309,7 +329,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/governance",
-        "id": "1LPBboldOeNJ6Vtx"
+        "id": "1LPBboldOeNJ6Vtx",
+        "label": "🧑‍⚖️ governance"
     },
     {
         "type": "Directory",
@@ -317,7 +338,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/interfaces",
-        "id": "B7YaSZvn93zIpchH"
+        "id": "B7YaSZvn93zIpchH",
+        "label": "🫥 interfaces"
     },
     {
         "type": "Directory",
@@ -325,7 +347,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/metatx",
-        "id": "RecKkaWD1XpVPqJB"
+        "id": "RecKkaWD1XpVPqJB",
+        "label": "🔖 metatx"
     },
     {
         "type": "Directory",
@@ -333,7 +356,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/mocks",
-        "id": "HqCbgSvLtVYj8G79"
+        "id": "HqCbgSvLtVYj8G79",
+        "label": "🥸 mocks"
     },
     {
         "type": "Directory",
@@ -341,7 +365,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/proxy",
-        "id": "I0LnU7l9FZxhmXky"
+        "id": "I0LnU7l9FZxhmXky",
+        "label": "🚚 proxy"
     },
     {
         "type": "Directory",
@@ -349,7 +374,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/security",
-        "id": "0OLzUncPWais4SQt"
+        "id": "0OLzUncPWais4SQt",
+        "label": "⛑ security"
     },
     {
         "type": "Directory",
@@ -357,7 +383,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/token",
-        "id": "TJgjLSp3qrYGf0zO"
+        "id": "TJgjLSp3qrYGf0zO",
+        "label": "🎖 tokens"
     },
     {
         "type": "Directory",
@@ -365,7 +392,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/utils",
-        "id": "8PBW7VLlYm0exw6X"
+        "id": "8PBW7VLlYm0exw6X",
+        "label": "🛠 utils"
     },
     {
         "type": "Directory",
@@ -373,7 +401,8 @@
         "parent_id": "48nCVzQyj3sDv2WS",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts/contracts/vendor",
-        "id": "oC7XA4Wtp3Juc9SP"
+        "id": "oC7XA4Wtp3Juc9SP",
+        "label": "🤝 vendor"
     },
     {
         "type": "Directory",
@@ -381,7 +410,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/access",
-        "id": "y5Xb1h7LVDUslt2E"
+        "id": "y5Xb1h7LVDUslt2E",
+        "label": "🎟 access"
     },
     {
         "type": "Directory",
@@ -389,7 +419,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/crosschain",
-        "id": "bBKPeWD7HaMz6JNo"
+        "id": "bBKPeWD7HaMz6JNo",
+        "label": "⛓ crosschain"
     },
     {
         "type": "Directory",
@@ -397,7 +428,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/finance",
-        "id": "E8ODmxvdyBrJMcfH"
+        "id": "E8ODmxvdyBrJMcfH",
+        "label": "💰 finance"
     },
     {
         "type": "Directory",
@@ -405,7 +437,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/governance",
-        "id": "U5PtBmZ4Kc7gNsJy"
+        "id": "U5PtBmZ4Kc7gNsJy",
+        "label": "🧑‍⚖️ governance"
     },
     {
         "type": "Directory",
@@ -413,7 +446,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/interfaces",
-        "id": "Tajo5RQdybGZ9VD1"
+        "id": "Tajo5RQdybGZ9VD1",
+        "label": "🫥 interfaces"
     },
     {
         "type": "Directory",
@@ -421,7 +455,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/metatx",
-        "id": "vNTfrSLPYJpwQ6qd"
+        "id": "vNTfrSLPYJpwQ6qd",
+        "label": "🔖 metatx"
     },
     {
         "type": "Directory",
@@ -429,7 +464,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/mocks",
-        "id": "acgSzEhr3UbpLvZB"
+        "id": "acgSzEhr3UbpLvZB",
+        "label": "🥸 mocks"
     },
     {
         "type": "Directory",
@@ -437,7 +473,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/proxy",
-        "id": "afOmA0RwYP8zVKUC"
+        "id": "afOmA0RwYP8zVKUC",
+        "label": "🚚 proxy"
     },
     {
         "type": "Directory",
@@ -445,7 +482,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/security",
-        "id": "KjFZWgHR2z9NlycM"
+        "id": "KjFZWgHR2z9NlycM",
+        "label": "⛑ security"
     },
     {
         "type": "Directory",
@@ -453,7 +491,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/token",
-        "id": "b5N0ufAw12vVgIpJ"
+        "id": "b5N0ufAw12vVgIpJ",
+        "label": "🎖 tokens"
     },
     {
         "type": "Directory",
@@ -461,7 +500,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/utils",
-        "id": "tqe046wbx2ikXL8R"
+        "id": "tqe046wbx2ikXL8R",
+        "label": "🛠 utils"
     },
     {
         "type": "Directory",
@@ -469,7 +509,8 @@
         "parent_id": "h3IZScnoRJtqC2XU",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/openzeppelin-contracts-upgradeable/contracts/vendor",
-        "id": "jX6BOUbgf9soi18S"
+        "id": "jX6BOUbgf9soi18S",
+        "label": "🤝 vendor"
     },
     {
         "type": "Group",
@@ -486,7 +527,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/accessors",
-        "id": "1Iiov9NHTAJEb3Ua"
+        "id": "1Iiov9NHTAJEb3Ua",
+        "label": "🤖 accessors"
     },
     {
         "type": "Directory",
@@ -494,7 +536,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/base",
-        "id": "CWzhTb3ZGDciHN5t"
+        "id": "CWzhTb3ZGDciHN5t",
+        "label": "🕋 base"
     },
     {
         "type": "Directory",
@@ -502,7 +545,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/common",
-        "id": "BS1Lxc7wIzofvUnO"
+        "id": "BS1Lxc7wIzofvUnO",
+        "label": "🫡 common"
     },
     {
         "type": "Directory",
@@ -510,7 +554,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/examples",
-        "id": "4VilJE6p7hb2YaDH"
+        "id": "4VilJE6p7hb2YaDH",
+        "label": "🎁 examples"
     },
     {
         "type": "Directory",
@@ -518,7 +563,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/external",
-        "id": "HgPxBV6yhQTdkM3S"
+        "id": "HgPxBV6yhQTdkM3S",
+        "label": "👻 external"
     },
     {
         "type": "Directory",
@@ -526,7 +572,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/handler",
-        "id": "bFGRmeDTC7OWLq5S"
+        "id": "bFGRmeDTC7OWLq5S",
+        "label": "☎️ handler"
     },
     {
         "type": "Directory",
@@ -534,7 +581,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/interfaces",
-        "id": "wrZdipyxFfVkCB6s"
+        "id": "wrZdipyxFfVkCB6s",
+        "label": "🫥 interfaces"
     },
     {
         "type": "Directory",
@@ -542,7 +590,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/libraries",
-        "id": "lfJVitCyFkLMZB0I"
+        "id": "lfJVitCyFkLMZB0I",
+        "label": "📚 libraries"
     },
     {
         "type": "Directory",
@@ -550,7 +599,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/proxies",
-        "id": "3ZbNGYv5XuAehByx"
+        "id": "3ZbNGYv5XuAehByx",
+        "label": "🚚 proxies"
     },
     {
         "type": "File",
@@ -558,7 +608,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/GnosisSafe.sol",
-        "id": "WJyrGRFAX07Z1cwE"
+        "id": "WJyrGRFAX07Z1cwE",
+        "label": "🔐 GnosisSafe.sol"
     },
     {
         "type": "File",
@@ -566,7 +617,8 @@
         "parent_id": "UJcTWmliSH10agZO",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/safe-contracts/contracts/GnosisSafeL2.sol",
-        "id": "cH6SBvPMxJqpOiDh"
+        "id": "cH6SBvPMxJqpOiDh",
+        "label": "🔐 GnosisSafeL2.sol"
     },
     {
         "type": "Group",
@@ -583,7 +635,8 @@
         "parent_id": "sJjRoI7wvqOyaeSC",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/solmate/src/auth",
-        "id": "YANS7TK2M1VWbqav"
+        "id": "YANS7TK2M1VWbqav",
+        "label": "🎟 auth"
     },
     {
         "type": "Directory",
@@ -591,7 +644,8 @@
         "parent_id": "sJjRoI7wvqOyaeSC",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/solmate/src/tokens",
-        "id": "ySuNdB8iWJEqfCVL"
+        "id": "ySuNdB8iWJEqfCVL",
+        "label": "🎖 tokens"
     },
     {
         "type": "Directory",
@@ -599,6 +653,16 @@
         "parent_id": "sJjRoI7wvqOyaeSC",
         "workspaceRoot": "/workspaces/solidity-template",
         "workspacePath": "lib/solmate/src/utils",
-        "id": "cMT6NObxRIQdXn0e"
+        "id": "cMT6NObxRIQdXn0e",
+        "label": "🛠 utils"
+    },
+    {
+        "type": "File",
+        "name": "/workspaces/solidity-template/.env",
+        "parent_id": "4OFlGhvSIEa8c9PW",
+        "workspaceRoot": "/workspaces/solidity-template",
+        "workspacePath": ".env",
+        "id": "o0xKESDIXM6CRFgU",
+        "label": "🗝 .env"
     }
 ]
